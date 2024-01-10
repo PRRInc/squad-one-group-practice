@@ -4,10 +4,14 @@
  * @param {number[][]} rectangles - An array of rectangles, where each rectangle is represented by [length, width].
  * @returns {number} - The total area of all rectangles.
  */
-  function calculateTotalArea(rectangles) {
-    // Implementation is intentionally omitted in this file.
+
+const rectangleSizesArry = [[10, 15], [3, 20,], [7, 9], [4, 4], [3, 3]];
+
+function calculateTotalArea(rectangles) {
+    return rectangles.reduce((acc, currVal) => acc + currVal[0] * currVal[1], 0);
   }
   
+  console.log(calculateTotalArea(rectangleSizesArry));
   /**
    * Finds and returns the largest element in an array of numbers.
    *
