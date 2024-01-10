@@ -4,10 +4,14 @@
  * @param {number[][]} rectangles - An array of rectangles, where each rectangle is represented by [length, width].
  * @returns {number} - The total area of all rectangles.
  */
+
+const rectangleSizesArry = [[10, 15], [3, 20,], [7, 9], [4, 4], [3, 3]];
+
 function calculateTotalArea(rectangles) {
-    // Implementation is intentionally omitted in this file.
+    return rectangles.reduce((acc, currVal) => acc + currVal[0] * currVal[1], 0);
   }
   
+  console.log(calculateTotalArea(rectangleSizesArry));
   /**
    * Finds and returns the largest element in an array of numbers.
    *
@@ -46,9 +50,16 @@ function calculateTotalArea(rectangles) {
    * @param {number[]} arr2 - The second sorted array.
    * @returns {number[]} - The merged and sorted array.
    */
+  
+  let firstNums = [1, 4, 3, 6, 5];
+  let secondNums = [5, 9, 7, 8, 4];
+  
   function mergeSortedArrays(arr1, arr2) {
-    // Implementation is intentionally omitted in this file.
+    return (arr1.sort().concat(arr2.sort())).sort();
   }
+
+  console.log(mergeSortedArrays(firstNums, secondNums));
+
   
   /**
    * Calculates the factorial of a non-negative integer.
