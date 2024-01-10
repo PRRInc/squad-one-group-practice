@@ -25,8 +25,7 @@
    * @returns {boolean} - True if the string is a palindrome, false otherwise.
    */
   function isPalindrome(inputString) {
-    let reverse = inputString.reverse();
-    return inputString === reverse ? true : false;
+    return inputString === (inputString.split("").reverse().join("")) ? true : false;
   }
   
   /**
