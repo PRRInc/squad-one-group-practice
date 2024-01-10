@@ -46,9 +46,16 @@ function calculateTotalArea(rectangles) {
    * @param {number[]} arr2 - The second sorted array.
    * @returns {number[]} - The merged and sorted array.
    */
+  
+  let firstNums = [1, 4, 3, 6, 5];
+  let secondNums = [5, 9, 7, 8, 4];
+  
   function mergeSortedArrays(arr1, arr2) {
-    // Implementation is intentionally omitted in this file.
+    return (arr1.sort().concat(arr2.sort())).sort();
   }
+
+  console.log(mergeSortedArrays(firstNums, secondNums));
+
   
   /**
    * Calculates the factorial of a non-negative integer.
