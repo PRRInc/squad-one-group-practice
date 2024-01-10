@@ -31,7 +31,7 @@ function calculateTotalArea(rectangles) {
    * @returns {boolean} - True if the string is a palindrome, false otherwise.
    */
   function isPalindrome(inputString) {
-    // Implementation is intentionally omitted in this file.
+    return inputString === (inputString.split("").reverse().join("")) ? true : false;
   }
   
   /**
