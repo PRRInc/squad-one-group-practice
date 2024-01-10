@@ -15,9 +15,11 @@ function calculateTotalArea(rectangles) {
    * @returns {number|null} - The largest element or null if the array is empty.
    */
   function findLargestElement(numbers) {
-    // Implementation is intentionally omitted in this file.
+    return Math.max(...numbers)
   }
-  
+  let arr = [1,50,30,12,56]
+  let num = findLargestElement(arr)
+  console.log(num);
   /**
    * Checks if a given string is a palindrome.
    *
