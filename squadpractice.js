@@ -4,7 +4,7 @@
  * @param {number[][]} rectangles - An array of rectangles, where each rectangle is represented by [length, width].
  * @returns {number} - The total area of all rectangles.
  */
-function calculateTotalArea(rectangles) {
+  function calculateTotalArea(rectangles) {
     // Implementation is intentionally omitted in this file.
   }
   
@@ -25,7 +25,8 @@ function calculateTotalArea(rectangles) {
    * @returns {boolean} - True if the string is a palindrome, false otherwise.
    */
   function isPalindrome(inputString) {
-    // Implementation is intentionally omitted in this file.
+    let reverse = inputString.reverse();
+    return inputString === reverse ? true : false;
   }
   
   /**
